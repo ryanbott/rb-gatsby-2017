@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <main>
 <section className="hero" style={{paddingBottom: "2em"}}>
 <div className="row">
@@ -17,7 +18,8 @@ const IndexPage = () => (
     </div>
   </div>
   <div className="recipe_image">
-    <img src='/img/Foggy-Night-Print_web.jpg' alt="Foggy Night Print Web" />
+    <Img className="recipe_image--img" sizes={data.background.sizes} alt="Foggy Night Print Web"/>
+
   </div>
   </div>
 </div>
@@ -121,3 +123,19 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+export const query = graphql`
+  query SiteMeta {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    background: imageSharp(id: {regex: "/Foggy-Night-Print_web.jpg/"}) {
+      sizes(maxWidth: 800) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`

@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 
-const WorkPage = () => (
+
+const WorkPage = ({data}) => (
 <main>
 <div className="">
       <section className="hero" style={{paddingBottom: "2em"}}>
@@ -18,7 +20,7 @@ const WorkPage = () => (
       </div>
     </div>
     <div className="recipe_image">
-      <img src='/img/penguins800x600.jpg' alt="Penguins800X600" />
+      <Img className="recipe_image--img" sizes={data.workBackground.sizes} alt="Penguins Phone Case Art"/>
     </div>
     </div>
   </div>
@@ -94,3 +96,13 @@ platforms.</p>
 )
 
 export default WorkPage
+
+export const query = graphql`
+  query WorkSiteMeta {
+    workBackground: imageSharp(id: {regex: "/penguins800x600.jpg/"}) {
+      sizes(maxWidth: 800) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`

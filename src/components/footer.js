@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import logo from '../img/logo.png'
+import FooterLogo from '../img/rb_logo_white.png'
 
 const FooterNav = [
   {
@@ -25,6 +25,9 @@ const SocialLinks = [
     name: 'Dribbble',
     link: 'http://dribbble.com/ryanbott'
   }, {
+    name: 'Behance',
+    link: 'https://www.behance.net/ryanbott'
+  },{
     name: '500px',
     link: 'http://500px.com/ryanbott'
   },
@@ -37,7 +40,7 @@ const Footer = ({ siteTitle }) => (
       <div className="c_3_block">
         <div className="footer_block">
         <div className="footer_logo">
-            <a href="/"><img src='/globals/rb_logo_white.png' alt="Ryan Bott" /></a>
+            <a href="/"><img src={FooterLogo} alt="Ryan Bott" /></a>
         </div>
       </div>
       </div>
