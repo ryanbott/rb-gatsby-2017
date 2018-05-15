@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Node module css imports*/
+/* @import 'normalize.css/normalize.css'; */
+
+/*Site specific css imports*/
+@import 'partials/defaults.scss';
+@import 'partials/header.scss';
+@import 'partials/blocks.scss';
+@import 'partials/form.scss';
+@import 'partials/footer.scss';
+
+
+/*CSS Variable declarations*/
+:root {
+  --main: #FDFEFF;
+  --teal: #5DC7CC;
+  --main: #333;
+  --fade1: rgba(62, 68, 70, .99);
+  --fade2: rgba(27, 97, 110, .90);
+  --offwhite: #ECECE4;
+  --yellow: #FDC85A;
+
+
+  /*new color scheme*/
+  --main-blue: #242A46;
+  --red: #A56D73;
+  --pale: #E0D9E3;
+  --purple: #6B6A88;
+  --light-purple: #9997B2;
+  --peach: #F8B1A2;
+  --beige: #F3C8AF;
+
+  /*foggy night  color scheme*/
+  --darkblue: #4C5156;
+  --gold: #8d765a;
+  --midblue: #758092;
+  --lightblue: #99A1A8;
+  --midwhite: #D8DDDD;
+
+  --gen: "Geneva", Verdana, Helvetica, Arial, Sans-Serif;
+  --pal: "Palatino", serif;
+  --lato: "Lato", sans-serif;
+  --shadow: 6px 6px 24px 0 rgba(26, 45, 63, .37);
+  --shadow-light: 2px 2px 12px 0 rgba(26, 45, 63, .37);
+}
+
+/*Breakpoints for postcss-custom-media*/
+/*@custom-media --desktop-up (min-width:1100px);*/
+@custom-media --desktop-min (min-width:1100px);
+@custom-media --desktop-max (max-width:1100px);
+@custom-media --tablet-min (min-width:781px);
+@custom-media --tablet-max (max-width:781px);
+@custom-media --mobile-min (min-width:541px);
+@custom-media --mobile-max (max-width:541px);
+@custom-media --tiny-min (min-width:361px);
+@custom-media --tiny-max (max-width:361px);
