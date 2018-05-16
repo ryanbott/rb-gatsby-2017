@@ -49,7 +49,7 @@ const Footer = ({ siteTitle }) => (
     <ul>
       {FooterNav.map(link => (
         <li key={link.name}>
-          <p><Link to={link.link}>{link.name}</Link></p>
+          <p><a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a></p>
         </li>
       ))}
     </ul>
