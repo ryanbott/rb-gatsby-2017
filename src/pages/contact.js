@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const ContactPage = () => (
   <div className="row">
-    <div className="contentArea" style={{marginTop: "2em"}}>
+    <div className="contentArea">
       <h2>I&#039;m always looking for new projects, ideas and conversations to have coffee over</h2>
       <p>Whether it's just to say hi or for any inquiries, please feel free to connect with me through the contact form below or through social media.</p>
       <form

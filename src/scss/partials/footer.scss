@@ -29,6 +29,7 @@
   &_social {
     display: flex;
     ul {
+      padding: 0;
       margin: 0 auto;
       li {
         display: inline;
@@ -39,6 +40,9 @@
           letter-spacing:1px;
           line-height: 24px;
           color: var(--main);
+        }
+        @media screen and (max-width: 541px) {
+          padding: 0 .25em;
         }
       }
     }
@@ -78,10 +82,6 @@
         text-decoration:underline;
       }
     }
-    i.fa {
-      font-size:2em;
-      padding:.25em;
-    }
   }
   &_bottom {
     background-color: #2d2d2d;
@@ -101,10 +101,10 @@
         font-size:.8em;
         color:#939393;
       }
-      @media(--tablet-max) {
+      @media screen and (max-width: 781px) {
         width: 72%;
       }
-      @media(--mobile-max) {
+      @media screen and (max-width: 541px) {
         width: 92%;
       }
     }

@@ -44,7 +44,7 @@ const Footer = ({ siteTitle }) => (
         </div>
       </div>
       </div>
-  <div className="c_3">
+  <div className="c_6">
     <p>Explore</p>
     <ul>
       {FooterNav.map(link => (

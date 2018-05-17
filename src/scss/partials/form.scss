@@ -1,55 +1,75 @@
 .form_box {
   text-align:center;
 }
-.form {
-  padding: 1em 4em;
-  background-color: #e5e5e5;
-  fieldset {
-    border: none;
-  }
-  &__label {
-    text-align:left;
-    font-size:1.5em;
-    font-family: var(--gen);
+form {
+  padding-bottom: 4em;
+  input[type="text"] {
+    padding: 1em;
+    width: 100%;
+    font-family: var(--lato);
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
     color: var(--main);
-    padding: .5em 1em .25em;
-  }
-  &__field {
-    padding: 1em 1.5em;
-    input {
-      font-family: var(--gen);
-      line-height: 2.5;
-      padding: .5em 1em;
-      margin-bottom: 1em;
-      border:none;
-      border-radius: 4px;
-      width: 100%;
-    }
-    textarea {
-      width: 100%;
-      height: 140px;
-      border: none;
-      border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid var(--teal);
+    margin-bottom: 1em;
+    &:focus {
+          outline: var(--teal) auto 5px;
     }
   }
-  &__note {
-    text-align: left;
-    padding: 1em 2.5em;
-    font-family: var(--gen);
+  input[type="email"] {
+    padding: 1em;
+    width: 100%;
+    font-family: var(--lato);
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: var(--main);
+    border: none;
+    border-bottom: 2px solid var(--teal);
+    margin-bottom: 1em;
+    &:focus {
+          outline: var(--teal) auto 5px;
+    }
+  }
+  textarea[type="text"] {
+    padding: 1em;
+    width: 100%;
+
+    font-family: var(--lato);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: var(--main);
+
+
+    height: 8em;
+    border: none;
+    border-bottom: 2px solid var(--teal);
+    margin-bottom: 1em;
+    &:focus {
+          outline: var(--teal) auto 5px;
+    }
   }
   button {
-    margin: 1em 1.5em;
-    font-size: 1.5em;
-    letter-spacing:1px;
+    cursor: pointer;
+    float: left;
     font-family: var(--gen);
-    padding: .5em 1em;
-    background-color: var(--midblue);
+    font-size: 1em;
+    font-weight:bold;
+    background-color: #151516;
     color: white;
-    border: none;
+    padding: 1em 1.25em;
+    margin: 1em;
+    border: 0;
     border-radius: 6px;
+    box-shadow: var(--shadow-light);
+    transition: box-shadow .2s  font-size .5s ease;
     &:hover {
-      background-color: var(--darkblue);
-      box-shadow: var(--shadow-light);
+      background-color: #d3d3d3;
+      color: #151516;
+      border: 1px solid #151516;
     }
   }
 }
