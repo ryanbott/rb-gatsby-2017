@@ -15,7 +15,6 @@ form {
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
     &:focus { outline: var(--teal) auto 5px; }
-    &:valid { border-bottom: 2px solid #08c30d; }
     &:invalid { border-bottom: 2px solid #fb0202; }
   }
   input[type="email"] {
@@ -30,7 +29,6 @@ form {
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
     &:focus { outline: var(--teal) auto 5px; }
-    &:valid { border-bottom: 2px solid #08c30d; }
     &:invalid { border-bottom: 2px solid #fb0202; }
   }
   textarea[type="text"] {
@@ -49,7 +47,6 @@ form {
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
     &:focus { outline: var(--teal) auto 5px; }
-    &:valid { border-bottom: 2px solid #08c30d; }
     &:invalid { border-bottom: 2px solid #fb0202; }
   }
   button {
