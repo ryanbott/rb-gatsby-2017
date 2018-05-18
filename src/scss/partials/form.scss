@@ -14,9 +14,9 @@ form {
     border: none;
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
-    &:focus {
-          outline: var(--teal) auto 5px;
-    }
+    &:focus { outline: var(--teal) auto 5px; }
+    &:valid { border-bottom: 2px solid #08c30d; }
+    &:invalid { border-bottom: 2px solid #fb0202; }
   }
   input[type="email"] {
     padding: 1em;
@@ -29,9 +29,9 @@ form {
     border: none;
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
-    &:focus {
-          outline: var(--teal) auto 5px;
-    }
+    &:focus { outline: var(--teal) auto 5px; }
+    &:valid { border-bottom: 2px solid #08c30d; }
+    &:invalid { border-bottom: 2px solid #fb0202; }
   }
   textarea[type="text"] {
     padding: 1em;
@@ -48,9 +48,9 @@ form {
     border: none;
     border-bottom: 2px solid var(--teal);
     margin-bottom: 1em;
-    &:focus {
-          outline: var(--teal) auto 5px;
-    }
+    &:focus { outline: var(--teal) auto 5px; }
+    &:valid { border-bottom: 2px solid #08c30d; }
+    &:invalid { border-bottom: 2px solid #fb0202; }
   }
   button {
     cursor: pointer;

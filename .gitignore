@@ -3,7 +3,7 @@
 .git
 node_modules
 yarn-error.log
-
+.notes.md
 # Build directory
 /public
 .DS_Store
