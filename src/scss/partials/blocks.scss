@@ -55,6 +55,7 @@
       margin-top:2em;
     }
     @media screen and (max-width: 541px) {
+      order: 9;
       margin-top:2em;
     }
   }
@@ -149,7 +150,7 @@
       }
     }
     @media screen and (max-width: 541px) {
-      width:100%;
+      width: auto;
       padding: 2em 0;
     }
   }
